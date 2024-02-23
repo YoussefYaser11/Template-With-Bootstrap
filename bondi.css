@@ -1,0 +1,209 @@
+:root{
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+.main-btn{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+}
+.main-btn:hover{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.main-title::after{
+   content: "";
+   width: 120px;
+   height: 2px;
+   background-color: var(--green-color);
+   position: absolute;
+   bottom: -20px;
+   left: 50%;
+   transform: translatex(-50%);
+   -webkit-transform: translatex(-50%);
+   -moz-transform: translatex(-50%);
+   -ms-transform: translatex(-50%);
+   -o-transform: translatex(-50%);
+}
+/* Start Navbar */
+.navbar{
+    background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link{
+    color: var(--section-color) ;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--green-color)
+}
+.navbar  .search{
+    border-left: 1px solid var(--green-color);
+    color: var(--green-color);
+}
+.navbar .navbar-toggler{
+    color: var(--section-color);
+    border-color: var(--section-color);
+    font-size: 25px;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+    color: var(--section-color);
+}
+.navbar .navbar-toggler[aria-expanded="true"]{
+    border: 2px solid var(--green-color);
+    color: #33d1cc;
+}
+/* End Navbar */
+/* Start Landing */
+.landing{
+    background-color: var(--dark-color);
+    height: calc(100vh - 72px) ;
+}
+/* End landing */
+/* Start features  */
+.features .icon-holder{
+  height: 200px;
+}
+.features .icon-holder svg{
+    left: 50%;
+    transform: translatex(-50%);
+    -webkit-transform: translatex(-50%);
+    -moz-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
+}
+.features .icon-holder .number{
+    font-size: 12rem;
+    color: var(--section-color);
+}
+.features .icon-holder .icon{
+    /* font-size: 4rem; */
+    color: var(--green-color);
+}
+.features .feat h4{
+    color: var(--yellow-color);
+}
+/* End features */
+/* Start our-work  */
+.our-work{
+    background-color: var(--section-color);
+}
+.our-work ul .active{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.our-work ul li{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.our-work ul li:not(.active):hover{
+    color: var(--red-color);
+}
+.our-work .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.our-work .box::before{
+   content: attr(data-work);
+   position: absolute;
+   background-color: #33d1cc86;
+   width: calc(100% - 10px);
+   height: calc(100% - 10px);
+   color: white;
+   font-size: 1.5rem;
+   font-weight: bold;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: 0.5s;
+   -webkit-transition: 0.5s;
+   -moz-transition: 0.5s;
+   -ms-transition: 0.5s;
+   -o-transition: 0.5s;
+   transform: translatex(calc(-100% - 5px));
+   -webkit-transform: translatex(calc(-100% - 5px));
+   -moz-transform: translatex(calc(-100% - 5px));
+   -ms-transform: translatex(calc(-100% - 5px));
+   -o-transform: translatex(calc(-100% - 5px));
+}
+.box:hover::before{
+   transform: translatex(0);
+   -webkit-transform: translatex(0);
+   -moz-transform: translatex(0);
+   -ms-transform: translatex(0);
+   -o-transform: translatex(0);
+}
+/* End our-work */
+/* Start stuff */
+.stuff .description{
+    max-width: 500px;
+}
+/* End stuff */
+/* Start team  */
+.team{
+    background-color: var(--section-color);
+}
+.team h2{
+    color: var(--yellow-color);
+}
+.team .box h4{
+  background-color: var(--green-color);
+}
+/* End team */
+/* Start project*/
+.project{
+    background-color: var(--dark-color);
+}
+/* End project */
+/*  start subscribe  */
+.subscribe{
+    background-color: var(--yellow-color);
+}
+.subscribe input[type="email"]{
+    border-color: transparent transparent white transparent ;
+    outline: none;
+    caret-color: white;
+}
+.subscribe input::placeholder{
+    color: white;
+}
+.subscribe input[type="submit"]{
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+/*  end subscribe  */
+/*  start footer  */
+.footer{
+    background-color: var(--dark-color);
+}
+.footer .copyright > span{
+    color: var(--green-color);
+}
+.footer .copyright div span{
+    color: var(--yellow-color);
+}
+.footer .contact ul svg{
+    width: 20px;
+    height: 20px;
+}
+.footer .facebook{
+    background-color: #1877f2;
+}
+.footer .twitter{
+    background-color: #1da1f2;
+}
+.footer .linkedin{
+    background-color: #0a66c2;
+}
+.footer .youtube{
+    background-color: #ff0000;
+}
+/*  end footer  */
